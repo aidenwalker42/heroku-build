@@ -8,11 +8,16 @@ h1 {
 	color: black;
  	text-align: center;
     margin-bottom: 50px;
+    animation-name: fadetext;
+  animation-duration: 2s;
 }
 h2 {
 	font-family: helvetica;
 	color: black;
  	text-align: center;
+     animation-name: fadetext;
+  animation-duration: 2s;
+    
 }
 
 .aiden{
@@ -38,6 +43,8 @@ h2 {
 p {
  	font-family: helvetica;
 	font-size: 20px;
+    animation-name: fadetext;
+    animation-duration: 5s;
 }
 
 .main {
@@ -91,7 +98,19 @@ a.blocky {
     }
         a.blocky.active {
     background-color: darkcyan;
+    animation-name: fadeactive;
+  animation-duration: 0.6s;
     }
+
+    @keyframes fadeactive {
+        from {background-color: #4a4a4a;}
+        to {background-color: darkcyan;}
+      }
+    
+      @keyframes fadetext {
+        from {color: #4a4a4a00;}
+        to {color: black;}
+      }
 
     /*a.blocky2 {
     color:white;
