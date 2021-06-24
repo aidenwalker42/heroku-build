@@ -1,6 +1,105 @@
-body{
-    margin: 0;
+
+body {
+	background-color: #e6e6e6;
 }
-h2{
-    font-family: Arial, Helvetica, sans-serif;
+
+h1 {
+	font-family: 'Josefin Sans';font-size: 22px;
+	color: black;
+ 	text-align: center;
+    margin-bottom: 50px;
 }
+h2 {
+	font-family: helvetica;
+	color: black;
+ 	text-align: center;
+}
+
+.aiden{
+    font-family: 'Josefin Sans';font-size: 5vw;
+    margin: auto;
+    max-width: 2000px;
+}
+    .aiden.box{
+        color: black;
+        background: none;
+        margin-bottom: -25px;
+        
+    }
+   
+
+.walker{
+    font-family: 'Josefin Sans';font-size: 100px;
+	color: black;
+ 	text-align: right;
+    margin: 20px 268px -25px 
+}
+
+p {
+ 	font-family: helvetica;
+	font-size: 20px;
+}
+
+.main {
+    background-color: gainsboro;
+    margin: auto;
+    height: 1000px;
+    max-width: 2000px;
+
+    
+}
+
+a {
+ 	font-family: helvetica;
+	font-size: 20px;
+}
+.picture {   
+  width: auto;
+  display: inline-block;    
+}
+
+.picture img {
+  width: 30%; /* Will shrink image to 30% of its original width */
+  height: auto;    
+}
+
+.box {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+    max-width: 2000px;
+    display: flex;
+}
+    .one {
+    flex: 1 1 auto;
+    }
+    .two {
+    flex: 1 1 auto;
+        /*background-color:darkcyan*/
+    }
+a.blocky {
+    color:white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    }
+
+        a.blocky:hover {
+    background-color: #4a4a4a;
+    transition: 0.1s;
+    }
+        a.blocky.active {
+    background-color: darkcyan;
+    }
+
+    /*a.blocky2 {
+    color:white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    }
+
+    a.blocky2:hover {
+    background-color: lightsteelblue;
+    }
