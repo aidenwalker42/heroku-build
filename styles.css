@@ -94,7 +94,7 @@ a.blocky {
 
         a.blocky:hover {
     background-color: #4a4a4a;
-    transition: 0.1s;
+    transition: 0.3s;
     }
         a.blocky.active {
     background-color: darkcyan;
