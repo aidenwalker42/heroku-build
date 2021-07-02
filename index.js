@@ -29,5 +29,6 @@ function displayMessages(messages){
 
 document.getElementById("clear").onclick = function(){
     axios.delete("https://aidenwalker.herokuapp.com/message/delete/")
+    .then(res => displayMessages(res.data))
 }
 //when you click the button, get the value of the input field, send it through axios post
