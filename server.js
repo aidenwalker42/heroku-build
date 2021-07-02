@@ -26,3 +26,9 @@ app.post("/message/send", (req, res) =>{
     messages.push(req.body.m)
     res.status(200).send(messages)
 })
+
+app.delete("/message/delete/:id", (req, res) =>{
+    console.log(req.params.id)
+    messages.splice(req.params.id, 1);
+    res.status(200).send(messages)
+})
