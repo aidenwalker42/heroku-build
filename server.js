@@ -3,6 +3,7 @@ const app = express();
 
 const path = require("path")
 const cors = require("cors");
+const e = require("express");
 app.use(cors());
 app.use(express.json()); 
 
@@ -29,6 +30,12 @@ app.post("/message/send", (req, res) =>{
 
 app.delete("/message/delete/:id", (req, res) =>{
     console.log(req.params.id)
+    if(req.params.id)
+    {
     messages.splice(req.params.id, 1);
+    }
+    else{
+    messages = []
+    }
     res.status(200).send(messages)
 })

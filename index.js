@@ -26,4 +26,8 @@ function displayMessages(messages){
              "<p class=\"m\">" + messages[i] + "<button class=\"b\" onclick=\"removeMessageButton("+i+")\">X</p>"
         }
 }
+
+document.getElementById("clear").onclick = function(){
+    axios.delete("https://aidenwalker.herokuapp.com/message/delete/")
+}
 //when you click the button, get the value of the input field, send it through axios post
