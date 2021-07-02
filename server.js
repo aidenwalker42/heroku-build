@@ -29,6 +29,9 @@ app.get("/message", (req, res) => {
         update = false;
         res.status(200).send(messages);
     }
+    else{
+        res.status(400).send("No new messages yet")
+    }
 })
 
 app.post("/message/send", (req, res) =>{

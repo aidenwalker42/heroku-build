@@ -1,7 +1,7 @@
 setInterval(function(){
     axios.get("https://aidenwalker.herokuapp.com/message")
     .then(res => displayMessages(res.data))
-}, 10000)
+}, 3000)
 
 document.getElementById("send_message").onclick = function(){
     axios.post("https://aidenwalker.herokuapp.com/message/send", {
