@@ -1,5 +1,5 @@
 document.getElementById("send_message").onclick = function(){
-    axios.post("http://localhost:5050/message/send", {
+    axios.post("https://aidenwalker.herokuapp.com/message/send", {
         m: ""+document.getElementById("message").value
     })
     .then(res => {
@@ -10,7 +10,7 @@ document.getElementById("send_message").onclick = function(){
 
 function removeMessageButton(messageNum){
     console.log(messageNum)
-    axios.delete("http://localhost:5050/message/delete/"+messageNum)
+    axios.delete("https://aidenwalker.herokuapp.com/message/delete/"+messageNum)
     .then(res => {
         let messages = res.data;
         displayMessages(messages);
