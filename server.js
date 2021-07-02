@@ -30,12 +30,11 @@ app.post("/message/send", (req, res) =>{
 
 app.delete("/message/delete/:id", (req, res) =>{
     console.log(req.params.id)
-    if(req.params.id)
-    {
     messages.splice(req.params.id, 1);
-    }
-    else{
+    res.status(200).send(messages)
+})
+
+app.delete("/message/delete", (req, res) =>{
     messages = []
-    }
     res.status(200).send(messages)
 })
