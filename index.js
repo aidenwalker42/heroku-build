@@ -23,7 +23,7 @@ function displayMessages(messages){
         for(let i = 0; i<messages.length; i++) //goes through messages
         {
             document.getElementById("content").innerHTML +=
-             "<p class=\"m\">" + messages[i] + "<button class=\"b\" onclick=\"removeMessageButton("+i+")\">X</p>"
+             "<p>" + messages[i] + "<button onclick=\"removeMessageButton("+i+")\">X</button></p>"
         }
 }
 
@@ -31,4 +31,3 @@ document.getElementById("clear").onclick = function(){
     axios.delete("https://aidenwalker.herokuapp.com/message/delete/")
     .then(res => displayMessages(res.data))
 }
-//when you click the button, get the value of the input field, send it through axios post
