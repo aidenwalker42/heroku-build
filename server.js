@@ -30,6 +30,7 @@ app.get("/message", (req, res) => {
         res.status(200).send(messages);
     }
     else{
+        update = false;
         res.status(400).send("No new messages yet")
     }
 })
